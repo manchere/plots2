@@ -117,8 +117,12 @@
       <hr />
     <% end %>
     <% if !@preview %>
-        <%= render partial: "notes/responses" %>
+      <%= render partial: "notes/responses" %>
+      <% if @react %>
+        HELLO WORLD REACT!
+      <% else %>
         <div><%= render partial: "notes/comments" %></div>
+      <% end %>
     <% end %>
   </div>
 
